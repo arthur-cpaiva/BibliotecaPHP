@@ -9,7 +9,7 @@ body {
 /* Caixa principal do formulário */
 .container {
     background-color: white;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;

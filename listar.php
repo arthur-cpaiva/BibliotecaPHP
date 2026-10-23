@@ -13,7 +13,7 @@ $livros = $stmt->fetchALL(PDO::FETCH_ASSOC);/*Puxar informações do banco de da
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Pessoas</title>
+    <title>Lista de Livros</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
@@ -21,7 +21,7 @@ $livros = $stmt->fetchALL(PDO::FETCH_ASSOC);/*Puxar informações do banco de da
     <div class="container">
         <h1>Livros cadastrados</h1>
         <p>
-            Total de pessoas:
+            Total de livros:
             <strong><?= count($livros) ?></strong>
         </p>
 
@@ -43,7 +43,7 @@ $livros = $stmt->fetchALL(PDO::FETCH_ASSOC);/*Puxar informações do banco de da
                         </td>
                         <td><?= htmlspecialchars($livro["autor"],ENT_QUOTES,"UTF-8")?></td>
                         <td><?= htmlspecialchars($livro["editora"],ENT_QUOTES,"UTF-8")?></td>
-                        <td><?= htmlspecialchars($livro["ano"],ENT_QUOTES,"UTF-8")?></td>
+                        <td><?= htmlspecialchars($livro["ano_publicacao"],ENT_QUOTES,"UTF-8")?></td>
                         </tr>
                     <?php endforeach;?>
                     <?php else:?>
